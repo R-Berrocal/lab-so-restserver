@@ -45,6 +45,7 @@ exports.postCreateProcess = async (id, body) => {
           tiempoDeCpu,
           tituloDeVentana,
           quantum,
+          prioridad,
         }) => {
           const data = await Process.create({
             nombreDeImagen,
@@ -57,6 +58,7 @@ exports.postCreateProcess = async (id, body) => {
             tiempoDeCpu,
             tituloDeVentana,
             quantum,
+            prioridad,
             catalogueId: id,
           })
           fs.writeFile(`./assets/processFiles/${nombreDeImagen}.txt`, nombreDeImagen, (err) => {

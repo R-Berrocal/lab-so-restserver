@@ -49,6 +49,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      prioridad: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       catalogueId: {
         allowNull: false,
         type: Sequelize.INTEGER,

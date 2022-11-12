@@ -27,6 +27,7 @@ module.exports = (sequelize, DataTypes) => {
     tiempoDeCpu: DataTypes.STRING,
     tituloDeVentana: DataTypes.STRING,
     quantum: DataTypes.STRING,
+    prioridad: DataTypes.STRING,
     catalogueId: DataTypes.NUMBER 
   }, {
     sequelize,
